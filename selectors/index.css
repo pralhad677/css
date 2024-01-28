@@ -1,0 +1,56 @@
+/* tag selector */
+/* specifity 0 0 0 1 */ 
+h1{ 
+    color:red
+}
+
+/* class seclector */
+/* specifity 0 0 1 0 */
+.parent{
+    display: flex;
+}
+
+/* id selector */
+/* specifity 0 1 0 0 */
+#first{
+    color:green;
+} 
+/* specifity 0 1 0 1 */
+/* child combinator */
+#first h1{
+    color: inherit;
+}
+
+/* specifity 0 0 1 1 */
+/* descendent combinator */
+.child2 > ul {
+    color:yellowgreen
+}
+
+/* adjacent combinator */
+/* specifity 0 0 1 3 ---- 3 tag and 1 pseudo class */ 
+ul li:first-child + li {
+    color:red
+}
+ 
+
+ /* sibling selector */
+ /* specifity 0 0 2 0 */
+
+.child3 ~ .child4{
+    color:cyan
+}
+/* specifity 1 0 0 0 0 */
+.child4 h1 {
+    color: inherit !important;
+}
+.child4 h1 {
+    color:blue;
+}
+/* note inline has specifity as 1 0 0 0 */
+
+/* attribute selectors */
+/* specifity 0 0 2 0 */
+.child4[my-attribute]{
+    color:black;
+}
