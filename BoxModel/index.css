@@ -1,0 +1,10 @@
+div{
+    height:300px;
+    width: 300px;
+    background-color: red;
+    padding:10px;
+    margin:10px;
+    border:10px solid black;
+    background-clip: margin-box;
+    box-sizing: border-box;
+}
