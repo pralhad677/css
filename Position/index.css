@@ -1,0 +1,48 @@
+.parent{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 110vh;
+    /* margin: 20px; */
+    border: 5px solid black;
+}
+.fixed{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 10px; 
+    position: fixed;
+    top:0px;
+    left:0px;
+}
+.absolute{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    margin: 10px;
+    position: absolute;
+    top: 0px;
+}
+.relative{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    margin: 10px;
+}
+.sticky{
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    margin: 10px;
+    position: sticky;
+    /* top:30px; */
+    /* bottom:300px; */
+}
+ button{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    top: 300px;
+ }
