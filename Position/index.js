@@ -17,7 +17,7 @@ let it = showPosition()
  
 let button = document.querySelector('button')
 let iterationCount = 1; 
-button.addEventListener('click',function(){
+let x = function(){
   
      
     const  Value = it.next().value;
@@ -29,6 +29,12 @@ button.addEventListener('click',function(){
       console.log(content);
       button.innerText = content
     } 
+    if(iterationCount ===4){
+        console.log('remove')
+        button.removeEventListener('click',x)
+    }
     iterationCount++
-})
- 
+}
+
+button.addEventListener('click',x)
+console.log('iteration',iterationCount)
