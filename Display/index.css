@@ -1,0 +1,20 @@
+.block{
+    height: 30vh;
+    background-color: red;
+}
+ span{
+  
+    padding: 10px;
+    background-color: lightblue;
+}
+span:nth-child(2)~h1{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    background-color: cyan;
+    /* text-align:   right; */
+    vertical-align: top;
+
+} 
+/* inline has horizontal padding */
+/* inline ignores height and width property */

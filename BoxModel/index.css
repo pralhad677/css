@@ -8,3 +8,9 @@ div{
     background-clip: margin-box;
     box-sizing: border-box;
 }
+.child1{
+    margin-bottom: 50px;
+}
+.child2{
+    margin-top: 30px;
+}
