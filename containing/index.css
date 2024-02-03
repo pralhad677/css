@@ -1,0 +1,37 @@
+.parent{
+    border:1px solid black;
+    background-color: cyan ;
+    /* position: fixed; */
+    height:400px;
+    width: 400px;
+}
+.child{
+background-color:  red;
+position: fixed;
+height:50%;
+width: 50%;
+}
+.grandchild{
+    background-color: #fff;
+    display: inline ;
+    position: absolute;
+    height:50%;
+    width: 50%;
+}   
+p{
+    /* height: 200px; */
+    display: inline;
+    background-color: yellow;
+}
+.lastchild{
+    background-color: green;
+    /* display: inline;  */
+    height: 20%;
+    width: 30%;
+}
+/* 
+rule to remember
+1) fixed: it alwways points to view port,
+2) absolute:closest ancestor which has position other than static  or viewport,
+3) static,relative and sticky: closest ancestor having display block,inline-block
+*/
