@@ -1,0 +1,22 @@
+.box{
+    height: 400px;
+    background-color:red;
+    border:1px solid black;
+    animation: slide 2s ease-in-out infinite alternate;
+    /* ani */
+    transition: background-color 2s ease-in   ;
+}
+
+.box:hover{
+    background-color: blue;
+    transform: translate(30px,-30px);
+    /* transform: scale(1.5,.8) rotate(45deg); */
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
