@@ -1,0 +1,74 @@
+html{
+    margin: 0;
+    padding:0 ;
+    background-color: #122134;
+}
+.nav-bar{
+    height: 100vh;
+    width: 200px;
+    background-color: #233345;
+    margin: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    color: white;
+    position: relative;
+ 
+   
+}
+ul li{
+    list-style: none;
+    margin: 20px 0px;
+    font-size:2rem ;
+    width: 160px;
+    /* view-transition-name: navLink; */
+
+   &:hover{
+    cursor: pointer;
+   } 
+}
+/* ul li:nth-child(1){
+    view-timeline-name: navLink-1;
+}
+ul li:nth-child(2){
+    view-timeline-name: navLink-2;
+}
+ul li:nth-child(3){
+    view-timeline-name: navLink-3;
+}
+ul li:nth-child(4){
+    view-timeline-name: navLink-4;
+} */
+.active{
+    background-color: #122134;
+    width: 100%; 
+    /* transition: all 1s ease-in;   */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 10px;
+    padding:5px ;
+    padding-left: 15px;
+    transform: scale(1);
+    view-transition-name:navAnimation;
+  
+
+}
+
+::view-transition-group(*){
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+}
+ 
+.nav-bar::after{
+    content: "close";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.noAfter::after {
+    content: none;  
+  }
+.remove{
+    width: 150px;
+    transition: width 1s ease-in;
+}
