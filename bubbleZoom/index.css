@@ -7,6 +7,8 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
+ 
     
 }
 
@@ -18,15 +20,47 @@
     display: grid;
     place-items: center;
     border: solid white 5px;
+    position:absolute;
+    /* transition: all 500ms ease-in ; */
+   
  
 
+}
+.child:first-child{
+    left: 15px;
+}
+.child:nth-child(2){
+    left:40px
+}
+.child:nth-child(3){
+    left:80px
+}
+.child:nth-child(4){
+    left:120px
+}
+.child:nth-child(5){
+    left:160px
+}
+.child:nth-child(6){
+    left:200px
 }
 .parent >div:hover{
     transform: scale(1.2);
 
      
 }
- 
+ .parent:hover {
+     justify-content: center;
+    align-items: center;
+    transition: display 1s ease-in ;
+    & .child{
+        position: static;
+     
+      
+       
+    }
+ }
+  
 
 
 .hoverscale{

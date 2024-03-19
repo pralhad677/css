@@ -1,6 +1,8 @@
 let childDiv = document.querySelectorAll('.child')
 console.log(childDiv)
 
+const parent = document.querySelector('.parent')
+console.log('parent')
 
 Array.from(childDiv).forEach((item,index)=>{
     item.addEventListener('mouseover',()=>{
@@ -26,6 +28,7 @@ Array.from(childDiv).forEach((item,index)=>{
     item.addEventListener('mouseleave', () => {
     
         item.classList.remove('hover');
+         
         if(index===childDiv.length-1){ 
         
             childDiv[index-1].classList.remove('hoverscale')
@@ -42,3 +45,5 @@ Array.from(childDiv).forEach((item,index)=>{
     });
 
 })
+
+
