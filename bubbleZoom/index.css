@@ -1,0 +1,42 @@
+.parent{
+    height: 150px;
+    aspect-ratio: 7.5/1;
+    background-color: cyan;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    border: solid white 5px;
+ 
+
+}
+.parent >div:hover{
+    transform: scale(1.2);
+
+     
+}
+ 
+
+
+.hoverscale{
+    color: cyan;
+    transform: scale(1.1);
+    border-color: black;
+}
+
+.hover{
+    color: white;
+    transform: scale(1.8);
+}
+ 
