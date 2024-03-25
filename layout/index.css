@@ -1,0 +1,62 @@
+.parent{
+    height: 500px;
+    width: 650px;
+    margin: auto;
+    background-color: grey;
+    border: solid 1px red;
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+    ;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    text-align: center;
+               
+}
+
+.child{
+    background-color: white;
+    height: 20%;
+    width: 50%;
+    /* border-radius: 10px; */
+    position: relative;
+    padding:0 ;
+    background:linear-gradient(to left,red,blue);
+    background-color: wheat;
+    background-blend-mode: overlay;
+}
+.child::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: red;
+    left: -5px;
+    top: 0px;
+
+}
+h4{
+    position: absolute;
+    /* height: 0; */
+    top: -21px;
+    right: 0px;
+    vertical-align: top;
+    background-color: green;
+    color: white;
+}
+
+img{
+    position: absolute;
+    height: 70px;
+   aspect-ratio: 1/1;
+    border-radius: 50%;
+    
+    background-size: cover;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}

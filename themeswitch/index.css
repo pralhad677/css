@@ -1,0 +1,5 @@
+ 
+body {
+    background-color: green;
+    transition: background-color 0.5s ease;
+  }
